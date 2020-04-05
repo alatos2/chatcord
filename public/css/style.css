@@ -1,0 +1,19 @@
+body {
+    background: black;
+    color: aliceblue;
+}
+
+#major-wrapper{
+    width: 400px;
+    background: #FF9326;
+    margin: 0 auto 0 auto;
+}
+
+#content-wrapper {
+    background: #FFA64D;
+    padding: 20px;;
+}
+
+h2{
+    text-align: center;
+}

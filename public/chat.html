@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>ChartCord App</title>
+</head>
+<body>
+    <div class="container">
+        <header class="chat-header">
+            <h1>ChatCord</h1>
+            <a href="index.html">Leave Room</a>
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3>Room Name</h3>
+                <h2 id="room-name"></h2>
+                <h3>Users</h3>
+                <ul id="users"></ul>
+            </div>
+        </main>
+        <div class="chat-messages">
+            <!-- <div class="message">
+                <p class="meta">Brad <span>9:12pm</span></p>
+                <p class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit obcaecati libero enim dignissimos 
+                    consequuntur omnis aperiam pariatur nobis atque repellat.
+                </p>
+            </div> -->
+        </div>
+        <form id="chat-form">
+            <input 
+                type="text"
+                id="msg"
+                required
+                placeholder="Enter Message"
+                autocomplete="off"
+            />
+            <button>Send</button>
+        </form>
+</div>
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.3/qs.min.js" 
+    integrity="sha256-lSPkSu/D04IeqWOhTgTf5tLzNFEc37oNE9ysGS9PdK4=" 
+    crossorigin="anonymous">
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
